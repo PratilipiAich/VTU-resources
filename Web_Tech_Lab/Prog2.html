@@ -1,0 +1,23 @@
+<html>
+	<head> 
+		<title>Squares and Cubes</title>
+		<style>
+			table,tr, td, th
+			{
+    			border: 2px solid black;
+				width: 33%;
+				text-align: center;
+				border-collapse: collapse;
+                background-color:lightblue;
+			}       
+			table { margin: auto; } 
+		</style>
+	</head> 
+	<script>
+		document.write('<center><p><b>SQUARES AND CUBES FROM 0 TO 10</b></p></center>');
+		document.write('<table><th> Number </th><th> Square </th><th> Cube </th>');
+		for(var i = 1; i <= 10; i++)
+    		document.write("<tr><td>" + i + "</td><td>" + i*i  + "</td><td>" + i*i*i + "</td></tr>");
+		document.write("</table>");
+	</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<div id="demo"></div>
+		<script>
+			var size = 0, f = 1, text = "TEXT-GROWING", color;
+			function func()
+			{
+				if(f == 1) 
+					size += 5, color="red"; 
+				else 
+					size -= 5, color="blue";
+				document.getElementById("demo").innerHTML = 
+				"<h1 style=\"font-size:" + size + "px; text-align: center; margin-top: 20%; color:" + color + "\">" + text + "</h1>";
+				if(size == 50)	
+					f = 0, text = "TEXT-SHRINKING";
+				if(size == 5)
+					f = 1, text = "TEXT-GROWING";
+					timer();
+			}
+			function timer()
+			{ setTimeout(func, 300); }
+			timer();
+		</script>
+	</body>
+</html>

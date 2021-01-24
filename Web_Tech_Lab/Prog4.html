@@ -1,0 +1,20 @@
+<!DOCTYPE HMTL>
+<html>
+	<script>
+		var value = prompt("Enter the value:"), num = parseInt(value), rev = 0;
+		if(num) 
+		{
+			while(num > 0)
+				var rem = num % 10, rev = rev * 10 + rem, num = Math.floor(num / 10);
+				alert("Reverse of " + value + " is: " + rev);
+		}
+		else 
+		{
+			value = value.search(/[aeiouAEIOU]/);
+			if(value + 1)
+				alert("The first occurence of vowel is at: " + (value + 1));
+			else
+				alert("No vowel found in the string!");
+		}
+	</script>
+</html>
